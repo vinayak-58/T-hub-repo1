@@ -1,0 +1,64 @@
+/* styles.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #ff7e5f, #feb47b, #ff6f69, #ffcccb, #ffadad);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Keep the existing container styling for readability */
+.container {
+  background: rgba(93, 203, 240, 0.9); /* Semi-transparent background for contrast */
+  padding: 20px;
+  border-radius: 8px;
+  color: #333;
+  max-width: 1000px;
+  width: 90%;
+}
+
+/* Gradient Animation */
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Optional: Update other elements for readability */
+
+table {
+  background: #fff;
+  color: hwb(243 9% 11%);
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+table th, table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.tabs button {
+  background: #fff;
+  color: #333;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.tabs button.active {
+  background: rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+}
