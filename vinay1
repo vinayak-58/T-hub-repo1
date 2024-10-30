@@ -1,0 +1,16 @@
+import React from 'react';
+
+const Recommendations = () => {
+  return (
+    <div style={{ textAlign: 'center', padding: '20px' }}>
+      <h2>AI powered Recommendation</h2>
+      <ul style={{ listStyleType: 'none', padding: 0 }}>
+        <li>Content suggestion</li>
+        <li>Optimal Posting times</li>
+        <li>New Lead generation Ideas</li>
+      </ul>
+    </div>
+  );
+};
+
+export default Recommendations;
